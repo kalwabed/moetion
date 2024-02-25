@@ -1,5 +1,8 @@
 // uno.config.ts
-import { defineConfig } from 'unocss'
+import { defineConfig, transformerVariantGroup } from 'unocss'
 
 export default defineConfig({
+  transformers: [
+    transformerVariantGroup()
+  ]
 })
