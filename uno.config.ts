@@ -8,6 +8,10 @@ export default defineConfig({
       cdn: "https://esm.sh/",
       scale: 1.2,
       autoInstall: true,
+      warn: true,
+      collections: {
+        tabler: () => import('@iconify-json/tabler/icons.json').then(i => i.default),
+      }
     })
   ],
   transformers: [
