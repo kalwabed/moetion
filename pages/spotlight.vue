@@ -8,10 +8,7 @@ useHead({
   <div>
     <PageHeader title="Spotlight" />
     <div class="relative h-[40rem] flex overflow-hidden px-16 antialiased md:items-center md:justify-center lg:px-32">
-      <Spotlight
-        ext-class="-top-40 left-0 md:left-60 md:-top-20"
-        fill="white"
-      />
+      <CoreSpotlight ext-class="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
       <div class="relative z-10 mx-auto max-w-7xl w-full p-4 pt-20 md:pt-0">
         <h1
           class="bg-opacity-50 from-neutral-50 to-neutral-400 bg-gradient-to-b bg-clip-text text-center text-4xl text-transparent font-bold md:text-7xl"

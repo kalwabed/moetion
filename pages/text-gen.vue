@@ -22,8 +22,10 @@ onMounted(() => {
         <p class="c-gray">
           - Sutan Sjahrir
         </p>
-        <button class="mt4 inline-flex items-center gap2 rd-full p1 c-green transition hover:opacity-60" title="Repeat"
-          @click="repeat">
+        <button
+          class="mt4 inline-flex items-center gap2 rd-full p1 c-green transition hover:opacity-60" title="Repeat"
+          @click="repeat"
+        >
           <i class="i-tabler:reload block" /> Repeat
         </button>
       </div>

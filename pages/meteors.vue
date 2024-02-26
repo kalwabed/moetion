@@ -17,18 +17,10 @@ useHead({
         >
           <div class="mb-4 h-5 w-5 flex items-center justify-center border border-gray-500 rounded-full">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-2 w-2 text-gray-300"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-2 w-2 text-gray-300"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
-              />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25" />
             </svg>
           </div>
 
@@ -45,7 +37,7 @@ useHead({
             Explore
           </button>
 
-          <Meteors :qty="20" />
+          <CoreMeteors :qty="20" />
         </div>
       </div>
     </div>
