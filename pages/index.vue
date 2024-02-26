@@ -12,6 +12,12 @@ const components = [
     desc: 'Drawing attention to a particular element on the page.',
     icon: 'i-tabler:background',
   },
+  {
+    title: 'Text generation effect',
+    href: 'text-gen',
+    desc: 'Drawing attention to a particular element on the page.',
+    icon: 'i-tabler:background',
+  },
 ]
 </script>
 
@@ -20,11 +26,7 @@ const components = [
     <PageHeader />
     <div class="grid grid-cols-1 gap-4 px-4 lg:grid-cols-3 md:grid-cols-2 md:px-8">
       <ComponentCard
-        v-for="comp of components"
-        :key="comp.href"
-        :href="comp.href"
-        :title="comp.title"
-        :desc="comp.desc"
+        v-for="comp of components" :key="comp.href" :href="comp.href" :title="comp.title" :desc="comp.desc"
         :icon="comp.icon"
       />
     </div>

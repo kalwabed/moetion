@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import '@unocss/reset/tailwind.css'
-
 useHead({
   title: 'Moetion',
 })
