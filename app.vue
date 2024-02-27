@@ -5,10 +5,12 @@ useHead({
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtErrorBoundary />
-    <NuxtPage />
-  </NuxtLayout>
+  <div class="min-hfull wfull flex flex-auto bg-gray-9">
+    <main class="mx-auto hfull wfull max-w-screen-xl">
+      <NuxtErrorBoundary />
+      <NuxtPage />
+    </main>
+  </div>
 </template>
 
 <style>

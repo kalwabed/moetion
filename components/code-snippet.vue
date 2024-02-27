@@ -3,16 +3,20 @@ const props = defineProps<{
   snippet: { html: string, originalContent: string }
 }>()
 
-const { copy } = useClipboard({ source: props.snippet.originalContent })
+const { copy, copied } = useClipboard({ source: props.snippet.originalContent })
 </script>
 
 <template>
   <div class="relative b b-coolgray-8 rd rd-lg bg-[#121212] p4 text-wrap">
     <button
-      class="absolute right-3 top-3 rd-full p2 c-gray5 transition hover:c-gray3" title="Copy"
-      @click="copy(snippet.originalContent)"
+      class="disable:pointer-events-none absolute right-3 top-3 rd-full p2 c-gray5 transition hover:c-gray3"
+      title="Copy" :disabled="copied" @click="copy(snippet.originalContent)"
     >
-      <i class="i-tabler:copy block text-lg" />
+      <i
+        v-if="!copied" v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }"
+        class="i-tabler:copy block text-lg"
+      />
+      <span v-else v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }">Copied!</span>
     </button>
     <div v-html="snippet.html" />
   </div>
