@@ -16,7 +16,7 @@ const components = [
     title: 'Text generation effect',
     href: 'text-gen',
     desc: 'Drawing attention to a particular element on the page.',
-    icon: 'i-tabler:background',
+    icon: 'i-tabler:text-scan-2',
   },
 ]
 </script>

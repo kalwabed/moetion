@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['@unocss/reset/tailwind.css'],
-  modules: ['@unocss/nuxt', '@vueuse/motion/nuxt', 'nuxt-module-eslint-config', '@vueuse/nuxt'],
+  modules: [
+    '@unocss/nuxt',
+    '@vueuse/motion/nuxt',
+    'nuxt-module-eslint-config',
+    '@vueuse/nuxt',
+    'nuxt-shiki',
+  ],
   typescript: {
     strict: false,
   },
@@ -24,5 +30,9 @@ export default defineNuxtConfig({
         target: 'esnext',
       },
     },
+  },
+  shiki: {
+    themes: ['vitesse-dark'],
+    langs: ['vue'],
   },
 })

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{ qty?: number, class?: string }>()
+const props = defineProps<{ qty?: number, extClass?: string }>()
 
 const meteors = Array.from({ length: props.qty || 20 }).fill(true)
 </script>
