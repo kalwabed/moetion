@@ -2,17 +2,10 @@
 useHead({
   title: 'Meteors',
 })
-
-const { data } = await useFetch('/api/highlight', {
-  query: {
-    path: 'core/meteors.vue',
-  },
-})
 </script>
 
 <template>
-  <div>
-    <PageHeader title="Meteors" />
+  <CoreWrapper title="Meteors" core-path="core/meteors.vue">
     <div class="relative hfull wfull flex items-center justify-center">
       <div class="relative h-3/4 max-w-sm w-3/4 md:h-1/2">
         <div
@@ -47,6 +40,5 @@ const { data } = await useFetch('/api/highlight', {
         </div>
       </div>
     </div>
-    <CodeSnippet :snippet="data" />
-  </div>
+  </corewrapper>
 </template>

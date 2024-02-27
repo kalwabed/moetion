@@ -13,7 +13,7 @@ const components = [
     icon: 'i-tabler:background',
   },
   {
-    title: 'Text generation effect',
+    title: 'Text Generate Effect',
     href: 'text-gen',
     desc: 'Drawing attention to a particular element on the page.',
     icon: 'i-tabler:text-scan-2',

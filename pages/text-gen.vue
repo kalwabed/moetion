@@ -13,8 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <PageHeader title="Text generation effect" />
+  <CoreWrapper title="Text generate effect" core-path="core/text-generate-effect.vue">
     <div class="px4 md:px8">
       <CoreTextGenerateEffect :text="words" />
 
@@ -30,5 +29,5 @@ onMounted(() => {
         </button>
       </div>
     </div>
-  </div>
+  </Corewrapper>
 </template>

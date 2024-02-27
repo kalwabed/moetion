@@ -5,8 +5,7 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <PageHeader title="Spotlight" />
+  <CoreWrapper title="Spotlight" core-path="core/spotlight.vue">
     <div class="relative h-[40rem] flex overflow-hidden px-16 antialiased md:items-center md:justify-center lg:px-32">
       <CoreSpotlight ext-class="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
       <div class="relative z-10 mx-auto max-w-7xl w-full p-4 pt-20 md:pt-0">
@@ -22,5 +21,5 @@ useHead({
         </p>
       </div>
     </div>
-  </div>
+  </CoreWrapper>
 </template>
