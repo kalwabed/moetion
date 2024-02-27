@@ -1,20 +1,16 @@
 <script setup lang="ts">
-const props = defineProps<{
-  title: string
-  corePath: string
-}>()
+import type { Highlight } from '~/utils/types'
 
-const { data } = await useFetch<{ html: string, originalContent: string }>('/api/highlight', {
-  query: {
-    path: props.corePath,
-  },
-})
+defineProps<{
+  title: string
+  snippet: Highlight
+}>()
 </script>
 
 <template>
   <div>
     <PageHeader :title="title" />
     <slot />
-    <CodeSnippet :snippet="data" />
+    <CodeSnippet :snippet="snippet" />
   </div>
 </template>

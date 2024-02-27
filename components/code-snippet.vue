@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import type { Highlight } from '~/utils/types'
+
 const props = defineProps<{
-  snippet: { html: string, originalContent: string }
+  snippet: Highlight
 }>()
 
 const { copy, copied } = useClipboard({ source: props.snippet.originalContent })

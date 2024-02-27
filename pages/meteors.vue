@@ -2,10 +2,14 @@
 useHead({
   title: 'Meteors',
 })
+
+const { data } = useFetch<Highlight>('/api/highlight', {
+  query: { path: 'core/meteors.vue' },
+})
 </script>
 
 <template>
-  <CoreWrapper title="Meteors" core-path="core/meteors.vue">
+  <CoreWrapper title="Meteors" :snippet="data">
     <div class="relative hfull wfull flex items-center justify-center">
       <div class="relative h-3/4 max-w-sm w-3/4 md:h-1/2">
         <div

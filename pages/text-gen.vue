@@ -1,19 +1,29 @@
 <script setup lang="ts">
+import fs from 'node:fs/promises'
+import { cwd } from 'node:process'
+
 const words = '"Tiap persatuan hanya akan bersifat taktis, temporer dan karna itu insidental. Usaha-usaha untuk menyatukan secara paksa hanya akan menghasilkan anak banci, persatuan semacam itu akan terasa sakit, tersesat dan merusak pergerakan."'
 
 const { start, ready } = useTimeout(7000, { controls: true })
+const { data } = await useComponent('core/text-generate-effect.vue')
+
+async function testFile() {
+  const fileContent = await fs.readFile(`${cwd()}/components/meteors.vue`, 'utf8')
+  return fileContent
+}
 
 function repeat() {
   reloadNuxtApp()
 }
 
-onMounted(() => {
+onMounted(async () => {
   start()
+  await testFile()
 })
 </script>
 
 <template>
-  <CoreWrapper title="Text generate effect" core-path="core/text-generate-effect.vue">
+  <CoreWrapper title="Text generate effect" :snippet="data">
     <div class="px4 md:px8">
       <CoreTextGenerateEffect :text="words" />
 
