@@ -1,12 +1,14 @@
 ---
 title: 'Meteors'
+description: 'A group of beams in the background of a container.'
+icon: 'i-tabler:meteor'
 ---
 
 ::example-meteors-card
 :::meteors{:qty="30"}
 ::
 
-> Note: feel free to added it as `ClientOnly` component to prevent hydration mismatch.
+> Note: Feel free to add it as `ClientOnly` component to avoid hydration mismatch.
 
 ```vue
 <script setup lang="ts">
