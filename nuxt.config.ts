@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     'nuxt-module-eslint-config',
     '@vueuse/nuxt',
     'nuxt-shiki',
+    '@nuxt/content',
   ],
   typescript: {
     strict: false,
@@ -31,8 +32,13 @@ export default defineNuxtConfig({
       },
     },
   },
-  shiki: {
-    themes: ['vitesse-dark'],
-    langs: ['vue'],
+  // shiki: {
+  //   themes: ['vitesse-dark'],
+  //   langs: ['vue'],
+  // },
+  content: {
+    highlight: {
+      theme: 'vitesse-dark',
+    },
   },
 })

@@ -1,16 +1,12 @@
 <script setup lang="ts">
-import type { Highlight } from '~/utils/types'
-
 defineProps<{
   title: string
-  snippet: Highlight
 }>()
 </script>
 
 <template>
-  <div>
+  <div class="px4 md:px8">
     <PageHeader :title="title" />
     <slot />
-    <CodeSnippet :snippet="snippet" />
   </div>
 </template>

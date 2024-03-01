@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="my-14 wfull flex flex-col px-4 c-white md:px-8">
+  <div class="my-14 wfull flex flex-col c-white">
     <NuxtLink to="/" :class="title ? 'c-gray' : 'text-2xl font-bold'">
       Moetion
     </NuxtLink>

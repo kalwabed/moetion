@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import type { Highlight } from '~/utils/types'
-
 const props = defineProps<{
-  snippet: Highlight
+  code: string
 }>()
 
-const { copy, copied } = useClipboard({ source: props.snippet.originalContent })
+const { copy, copied } = useClipboard({ source: props.code })
 </script>
 
 <template>
   <div class="relative mx-auto mt-12 max-w-screen-lg b b-coolgray-8 rd rd-lg bg-[#121212] p4 text-wrap">
     <button
       class="disable:pointer-events-none absolute right-3 top-3 rd-full p2 c-gray5 transition hover:c-gray3"
-      title="Copy" :disabled="copied" @click="copy(snippet.originalContent)"
+      title="Copy" :disabled="copied" @click="copy()"
     >
       <i
         v-if="!copied" v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }"
@@ -20,7 +18,7 @@ const { copy, copied } = useClipboard({ source: props.snippet.originalContent })
       />
       <span v-else v-motion :initial="{ opacity: 0 }" :visible="{ opacity: 1 }">Copied!</span>
     </button>
-    <div v-html="snippet.html" />
+    <pre :class="$props.class"><slot /></pre>
   </div>
 </template>
 
