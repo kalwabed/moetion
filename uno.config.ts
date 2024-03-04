@@ -9,9 +9,9 @@ export default defineConfig({
       scale: 1.2,
       autoInstall: true,
       warn: true,
-      collections: {
-        tabler: () => import('@iconify-json/tabler/icons.json').then(i => i.default),
-      },
+      // collections: {
+      //   tabler: () => import('@iconify-json/tabler/icons.json').then(i => i.default),
+      // },
     }),
   ],
   transformers: [
