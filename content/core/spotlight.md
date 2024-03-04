@@ -1,10 +1,10 @@
 ---
 title: 'Spotlight'
-description: 'A group of beams in the background of a container.'
+description: 'Drawing attention to a particular element on the page.'
 icon: 'i-tabler:background'
 ---
 
-::example-spotlight
+::wrapper-spotlight
 :::spotlight{ext-class="-top-40 left-0 md:left-60 md:-top-20" fill="white"}
 ::
 

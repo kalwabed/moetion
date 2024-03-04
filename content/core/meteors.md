@@ -4,7 +4,7 @@ description: 'A group of beams in the background of a container.'
 icon: 'i-tabler:meteor'
 ---
 
-::example-meteors-card
+::wrapper-meteors
 :::meteors{:qty="30"}
 ::
 

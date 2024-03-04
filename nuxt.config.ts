@@ -13,6 +13,15 @@ export default defineNuxtConfig({
   typescript: {
     strict: false,
   },
+  components: {
+    dirs: [
+      {
+        path: '~/components/core',
+        global: true,
+      },
+      '~/components',
+    ],
+  },
   features: {
     // for UnoCSS
     inlineStyles: false,
