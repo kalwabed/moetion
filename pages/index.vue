@@ -1,4 +1,10 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Moetion',
+  description: 'Halo dunia',
+  ogTitle: 'Moetion',
+})
+
 const { data: components } = useAsyncData('components', () => queryContent('/core').find())
 </script>
 
