@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     'nuxt-module-eslint-config',
     '@vueuse/nuxt',
-    'nuxt-shiki',
     '@nuxt/content',
   ],
   typescript: {
@@ -41,10 +40,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  // shiki: {
-  //   themes: ['vitesse-dark'],
-  //   langs: ['vue'],
-  // },
   content: {
     highlight: {
       theme: 'vitesse-dark',

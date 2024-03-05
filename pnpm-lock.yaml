@@ -55,9 +55,6 @@ devDependencies:
   nuxt-module-eslint-config:
     specifier: ^0.1.0
     version: 0.1.0(@types/eslint@8.56.3)(eslint@8.57.0)(nuxt@3.10.3)(typescript@5.3.3)(vite@5.1.4)
-  nuxt-shiki:
-    specifier: ^0.1.2
-    version: 0.1.2
   simple-git-hooks:
     specifier: ^2.9.0
     version: 2.9.0
@@ -1867,6 +1864,7 @@ packages:
 
   /@shikijs/core@1.1.7:
     resolution: {integrity: sha512-gTYLUIuD1UbZp/11qozD3fWpUTuMqPSf3svDMMrL0UmlGU7D9dPw/V1FonwAorCUJBltaaESxq90jrSjQyGixg==}
+    dev: false
 
   /@shikijs/transformers@1.1.7:
     resolution: {integrity: sha512-lXz011ao4+rvweps/9h3CchBfzb1U5OtP5D51Tqc9lQYdLblWMIxQxH6Ybe1GeGINcEVM4goMyPrI0JvlIp4UQ==}
@@ -6633,17 +6631,6 @@ packages:
       - vite
     dev: true
 
-  /nuxt-shiki@0.1.2:
-    resolution: {integrity: sha512-hYBvvwxrWfEpOEoNpoqjGOxb97UMkdP6Vf3xHcM6HF1+LuJo+fnu4Ug1mMWyuf+f7GPJggAxVNcPdW156jg9OQ==}
-    dependencies:
-      '@nuxt/kit': 3.10.3
-      shiki: 1.1.7
-      unwasm: 0.3.7
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
   /nuxt@3.10.3(eslint@8.57.0)(typescript@5.3.3)(vite@5.1.4):
     resolution: {integrity: sha512-NchGNiiz9g/ErJAb462W/lpX2NqcXYb9hugySKWvLXNdrjeAPiJ2/7mhgwUSiZA9MpjuQg3saiEajr1zlRIOCg==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -7839,6 +7826,7 @@ packages:
     resolution: {integrity: sha512-9kUTMjZtcPH3i7vHunA6EraTPpPOITYTdA5uMrvsJRexktqP0s7P3s9HVK80b4pP42FRVe03D7fT3NmJv2yYhw==}
     dependencies:
       '@shikijs/core': 1.1.7
+    dev: false
 
   /signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
@@ -8696,6 +8684,7 @@ packages:
       pathe: 1.1.2
       pkg-types: 1.0.3
       unplugin: 1.7.1
+    dev: false
 
   /update-browserslist-db@1.0.13(browserslist@4.23.0):
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}

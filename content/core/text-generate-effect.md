@@ -1,7 +1,7 @@
 ---
 title: 'Text Generate Effect'
 description: 'A cool text effect that fades in text on page load.'
-icon: 'i-tabler:background'
+icon: 'i-tabler-background'
 text: '"Tiap persatuan hanya akan bersifat taktis, temporer dan karna itu insidental. Usaha-usaha untuk menyatukan secara paksa hanya akan menghasilkan anak banci, persatuan semacam itu akan terasa sakit, tersesat dan merusak pergerakan."'
 ---
 
